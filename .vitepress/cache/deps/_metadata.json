@@ -1,0 +1,79 @@
+{
+  "hash": "189dc0f0",
+  "configHash": "a2e600c5",
+  "lockfileHash": "b8ff8ffd",
+  "browserHash": "870c4d2a",
+  "optimized": {
+    "vue": {
+      "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "aeec3ac9",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../node_modules/@vue/devtools-api/dist/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "1b450ded",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../node_modules/@vueuse/core/index.mjs",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "38bb177d",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/integrations/useFocusTrap": {
+      "src": "../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
+      "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
+      "fileHash": "fd2008e1",
+      "needsInterop": false
+    },
+    "vitepress > mark.js/src/vanilla.js": {
+      "src": "../../../node_modules/mark.js/src/vanilla.js",
+      "file": "vitepress___mark__js_src_vanilla__js.js",
+      "fileHash": "02b6bbf1",
+      "needsInterop": false
+    },
+    "vitepress > minisearch": {
+      "src": "../../../node_modules/minisearch/dist/es/index.js",
+      "file": "vitepress___minisearch.js",
+      "fileHash": "c83fc049",
+      "needsInterop": false
+    },
+    "@escook/vitepress-theme": {
+      "src": "../../../node_modules/@escook/vitepress-theme/dist/index.js",
+      "file": "@escook_vitepress-theme.js",
+      "fileHash": "fb1aa2fa",
+      "needsInterop": false
+    },
+    "busuanzi.pure.js": {
+      "src": "../../../node_modules/busuanzi.pure.js/index.js",
+      "file": "busuanzi__pure__js.js",
+      "fileHash": "43e6989a",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "EscookMusicBall-BkDBnoZh-EQVDOAUX": {
+      "file": "EscookMusicBall-BkDBnoZh-EQVDOAUX.js"
+    },
+    "EscookHomeFeatureBefore-D_e5sYrO-HQN5MJGP": {
+      "file": "EscookHomeFeatureBefore-D_e5sYrO-HQN5MJGP.js"
+    },
+    "EscookConfetti-BU05OPRV-GLOFXXZB": {
+      "file": "EscookConfetti-BU05OPRV-GLOFXXZB.js"
+    },
+    "chunk-NO77HGPR": {
+      "file": "chunk-NO77HGPR.js"
+    },
+    "chunk-Z5MM7V3J": {
+      "file": "chunk-Z5MM7V3J.js"
+    },
+    "chunk-DYYST4CT": {
+      "file": "chunk-DYYST4CT.js"
+    },
+    "chunk-5WRI5ZAA": {
+      "file": "chunk-5WRI5ZAA.js"
+    }
+  }
+}
