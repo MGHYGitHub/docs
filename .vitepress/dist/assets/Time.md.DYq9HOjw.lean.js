@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a,a6 as i}from"./chunks/framework.B9LV5Rd2.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Time.md","filePath":"Time.md"}'),r={name:"Time.md"},n=i("",2),o=[n];function l(s,c,_,d,h,p){return a(),t("div",null,o)}const g=e(r,[["render",l]]);export{u as __pageData,g as default};

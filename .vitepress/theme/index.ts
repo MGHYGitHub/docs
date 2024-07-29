@@ -10,6 +10,7 @@ import "vitepress-markdown-timeline/dist/theme/index.css";
 import { inBrowser } from 'vitepress'
 import busuanzi from 'busuanzi.pure.js'
 import Busuanzi from './components/Busuanzi.vue'
+// import PageInfo from './components/PageInfo.vue'
 
 export default {
   // 3. 指定要继承的主题，并基于此主题进行二次扩展
@@ -21,11 +22,13 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     app.component('Busuanzi', Busuanzi)
+    // app.component('PageInfo', PageInfo) // 注册 PageInfo 组件
+
     if (inBrowser) {
-        router.onAfterRouteChanged = () => {
-          busuanzi.fetch()
-        }
+      router.onAfterRouteChanged = () => {
+        busuanzi.fetch()
       }
+    }
     // 扩展自定义的功能...
   }
 } satisfies Theme

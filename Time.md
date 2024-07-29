@@ -7,6 +7,8 @@
 - 修改`.gitignore`,`deploy.yml` V1.2.3
 - 修改`deploy.yml`  V1.2.3.1
 - 使用**Github**部署上线,修改时间轴,完成Toc目录编辑 V1.2.4
+- 开启时间戳`lastUpdated: true` V1.2.4.1
+- 防止死链接卡构建`ignoreDeadLinks: true`  V1.2.4.2
 :::
 
 ::: timeline 2024-07-24

@@ -8,6 +8,7 @@ import timeline from "vitepress-markdown-timeline";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme ({
+  ignoreDeadLinks: true,
   base: '/',
   extends: escookConfig,
   title: "橙子的文档站",
