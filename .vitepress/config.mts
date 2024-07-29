@@ -19,7 +19,7 @@ export default defineConfigWithTheme ({
     ['link', { rel: 'icon', href: '/logo.ico' }],
     ['link', { rel: 'icon', href: '/vitepress/logo.ico' }],
   ],
-  // lastUpdated: true, //此配置不会立即生效，需git提交后爬取时间戳，本地报错可以先注释
+  lastUpdated: true, //此配置不会立即生效，需git提交后爬取时间戳，本地报错可以先注释
   markdown: {
     image: {
       // 默认禁用图片懒加载
