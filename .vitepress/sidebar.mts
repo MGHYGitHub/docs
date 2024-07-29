@@ -18,6 +18,8 @@ export default {
         items: [
           { text: 'Vitepress 本地安装', link: '/Vitepress/Vitepress' },
           { text: '自定义主题使用', link: '/Vitepress/主题使用' },
+          { text: '全部改动', link: '/Vitepress/全部改动' },
+          { text: '静态部署', link: '/Vitepress/静态部署' },
         ]
       }
     ],

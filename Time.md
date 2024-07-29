@@ -1,9 +1,15 @@
-::: timeline 2023-04-24
-- 一个非常棒的开源项目 H5-Dooring 目前 star 3.1k
-  - 开源地址 https://github.com/MrXujiang/h5-Dooring
-  - 基本介绍 http://h5.dooring.cn/doc/zh/guide/
-- 《深入浅出webpack》 http://webpack.wuhaolin.cn/
+## **时间轴**
+
+
+::: timeline 2024-07-29
+- 编写[静态部署](/Vitepress/静态部署)文章 V1.1.1
+- 添加`.gitignore`,更新`deploy.yml`,修改目录导航等  V1.1.3
+- 修改`.gitignore`,`deploy.yml` V1.2.3
+- 修改`deploy.yml`  V1.2.3.1
+- 使用**Github**部署上线,修改时间轴,完成Toc目录编辑 V1.2.4
 :::
 
-::: timeline 2023-04-23
+::: timeline 2024-07-24
+- 完成基本部署|安装|搭建  V.Docs1.0
+- 完成基本美化及其配置  V1.1
 :::
