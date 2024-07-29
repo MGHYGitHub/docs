@@ -1,0 +1,40 @@
+# 节点模块
+node_modules/
+
+# 输出目录
+dist/
+public/
+
+# VitePress 缓存
+.cache/
+
+＃ 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 本地环境文件
+.env
+.env.local
+.env.*.local
+
+# 编辑目录和文件
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 临时文件
+*.tmp
+*.temp
+
+# 忽略锁定文件
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# 忽略构建输出
+docs/.vitepress/dist/
