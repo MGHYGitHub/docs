@@ -67,7 +67,7 @@ export default {
       };
     }
     // 将 ctx 参数传递给 escookTheme.enhanceApp 函数
-    // escookTheme.enhanceApp({ app, router, ctx });
+    escookTheme.enhanceApp({ app, router, ctx });
     // 可以在这里继续扩展自定义的功能...
   }
 } satisfies Theme

@@ -6,8 +6,8 @@ export default {
         items: [
           { text: 'Toc', link: '/Miscellaneous/Toc' },
           { text: '图标', link: '/Miscellaneous/icon' },
-          { text: 'Vitepress 本地安装', link: '/Vitepress/Vitepress' },
-          { text: '我的世界Purpur-1.20.1服务器', link: '/Vitepress/Vitepress' },
+          { text: 'Vitepress 本地安装', link: '/Vitepress' },
+          { text: '我的世界Purpur-1.20.1服务器', link: '/Mc/Purpur-1.20.1' },
         ]
       }
     ],
@@ -16,10 +16,12 @@ export default {
         text: '📗 Vitepress 搭建',
         collapsed: false,
         items: [
-          { text: 'Vitepress 本地安装', link: '/Vitepress/Vitepress' },
+          { text: 'Vitepress 本地安装', link: '/Vitepress' },
           { text: '自定义主题使用', link: '/Vitepress/主题使用' },
           { text: '全部改动', link: '/Vitepress/全部改动' },
           { text: '静态部署', link: '/Vitepress/静态部署' },
+          { text: '本站插件', link: '/Vitepress/本站插件' },
+          { text: '插件安装说明', link: '/Vitepress/插件安装说明' },
         ]
       }
     ],

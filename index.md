@@ -15,7 +15,7 @@ hero:
       link: /Miscellaneous/Toc
     - theme: alt
       text: Vitepress
-      link: /Vitepress/Vitepress
+      link: /Vitepress
     - theme: brand
       text: 🎮Minecraft
       link: /Mc/Purpur-1.20.1
