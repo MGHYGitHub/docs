@@ -36,9 +36,6 @@ import 'vitepress-plugin-codeblocks-fold/style/index.css'; // 导入样式
 export default {
   // 3. 指定要继承的主题，并基于此主题进行二次扩展
   extends: escookTheme,
-  enhanceApp(ctx) {
-    escookTheme.enhanceApp(ctx);
-  },
   setup() {
     // 获取前言和路由
     const { frontmatter } = useData();
@@ -52,26 +49,25 @@ export default {
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
       // 为较窄的屏幕（通常是小于 iPad Mini）添加阅读增强菜单
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
-      'layout-top': () => [ 
-        h(NolebaseHighlightTargetedHeading), 
+      'layout-top': () => [
+        h(NolebaseHighlightTargetedHeading),
       ],
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
-  enhanceApp({ app, router, siteData }) {
-
+  enhanceApp({ app, router, ctx }) {
+    // 在这里执行第一个 enhanceApp 函数的内容;
     app.use(NolebaseGitChangelogPlugin)
-
     app.use(NolebaseInlineLinkPreviewPlugin)
-
     app.component('Busuanzi', Busuanzi)
-    // app.component('PageInfo', PageInfo) // 注册 PageInfo 组件
-
+    // app.component('PageInfo', PageInfo); // 注册 PageInfo 组件
     if (inBrowser) {
       router.onAfterRouteChanged = () => {
-        busuanzi.fetch()
-      }
+        busuanzi.fetch();
+      };
     }
-    // 扩展自定义的功能...
-  },
+    // 将 ctx 参数传递给 escookTheme.enhanceApp 函数
+    // escookTheme.enhanceApp({ app, router, ctx });
+    // 可以在这里继续扩展自定义的功能...
+  }
 } satisfies Theme
