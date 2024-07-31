@@ -29,9 +29,23 @@ import {
 } from '@nolebase/vitepress-plugin-git-changelog/client'
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 
+import { useData, useRoute } from 'vitepress';
+import codeblocksFold from 'vitepress-plugin-codeblocks-fold'; // 导入方法
+import 'vitepress-plugin-codeblocks-fold/style/index.css'; // 导入样式
+
 export default {
   // 3. 指定要继承的主题，并基于此主题进行二次扩展
   extends: escookTheme,
+  enhanceApp(ctx) {
+    escookTheme.enhanceApp(ctx);
+  },
+  setup() {
+    // 获取前言和路由
+    const { frontmatter } = useData();
+    const route = useRoute();
+    // 基础使用
+    codeblocksFold({ route, frontmatter }, true, 400);
+  },
   Layout: () => {
     return h(escookTheme.Layout, null, {
       // 为较宽的屏幕的导航栏添加阅读增强菜单
@@ -45,6 +59,7 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
+
     app.use(NolebaseGitChangelogPlugin)
 
     app.use(NolebaseInlineLinkPreviewPlugin)
@@ -58,5 +73,5 @@ export default {
       }
     }
     // 扩展自定义的功能...
-  }
+  },
 } satisfies Theme
