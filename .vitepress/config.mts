@@ -5,6 +5,14 @@ import escookConfig from '@escook/vitepress-theme/config'
 import sidebar from './sidebar.mjs'
 import { nav } from './relaConf/index.mjs';
 import timeline from "vitepress-markdown-timeline";
+import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links';
+import { 
+  InlineLinkPreviewElementTransform 
+} from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
+import { 
+  GitChangelog, 
+  GitChangelogMarkdownSection, 
+} from '@nolebase/vitepress-plugin-git-changelog/vite'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme ({
@@ -31,6 +39,30 @@ export default defineConfigWithTheme ({
     //时间线
     config: (md) => {
       md.use(timeline);
+      md.use(BiDirectionalLinks())
+      md.use(InlineLinkPreviewElementTransform)
+    },
+  },
+  vite: {
+    plugins: [
+      GitChangelog({
+        // 填写在此处填写您的仓库链接
+        repoURL: () => 'https://github.com/MGHYGitHub/docs',
+      }),
+      GitChangelogMarkdownSection(),
+    ],
+    optimizeDeps: {
+      exclude: [
+        '@nolebase/vitepress-plugin-enhanced-readabilities/client',
+        '@nolebase/vitepress-plugin-highlight-targeted-heading',
+      ],
+    },
+    ssr: {
+      noExternal: [
+        // 如果还有别的依赖需要添加的话，并排填写和配置到这里即可
+        '@nolebase/vitepress-plugin-enhanced-readabilities',
+        '@nolebase/vitepress-plugin-highlight-targeted-heading',
+      ],
     },
   },
 

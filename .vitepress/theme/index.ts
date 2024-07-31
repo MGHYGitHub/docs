@@ -11,16 +11,44 @@ import { inBrowser } from 'vitepress'
 import busuanzi from 'busuanzi.pure.js'
 import Busuanzi from './components/Busuanzi.vue'
 // import PageInfo from './components/PageInfo.vue'
+import {
+  NolebaseEnhancedReadabilitiesMenu,
+  NolebaseEnhancedReadabilitiesScreenMenu,
+} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
+import { 
+  NolebaseInlineLinkPreviewPlugin, 
+} from '@nolebase/vitepress-plugin-inline-link-preview/client'
+import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
+import {  
+  NolebaseHighlightTargetedHeading,  
+} from '@nolebase/vitepress-plugin-highlight-targeted-heading/client'
+import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
+import { 
+  NolebaseGitChangelogPlugin 
+} from '@nolebase/vitepress-plugin-git-changelog/client'
+import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 
 export default {
   // 3. 指定要继承的主题，并基于此主题进行二次扩展
   extends: escookTheme,
   Layout: () => {
     return h(escookTheme.Layout, null, {
+      // 为较宽的屏幕的导航栏添加阅读增强菜单
+      'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
+      // 为较窄的屏幕（通常是小于 iPad Mini）添加阅读增强菜单
+      'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
+      'layout-top': () => [ 
+        h(NolebaseHighlightTargetedHeading), 
+      ],
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
   enhanceApp({ app, router, siteData }) {
+    app.use(NolebaseGitChangelogPlugin)
+
+    app.use(NolebaseInlineLinkPreviewPlugin)
+
     app.component('Busuanzi', Busuanzi)
     // app.component('PageInfo', PageInfo) // 注册 PageInfo 组件
 
