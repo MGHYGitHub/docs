@@ -36,6 +36,16 @@ export default {
           { text: '4. 变量列表', link: '/Mc/Purpur-1.20.1/变量列表' },
           { text: '5.1. [参考]优化-1', link: '/Mc/Purpur-1.20.1/优化-1' },
           { text: '5.2. [参考]优化-2', link: '/Mc/Purpur-1.20.1/优化-2' },
+          { text: '6. 指令列表', link: '/Mc/Purpur-1.20.1/指令列表' },
+        ]
+      },
+
+      {
+        text: '🎮插件教程/介绍',
+        collapsed: false,
+        items: [
+          { text: '1. CMI插件文档帮助', link: '/Mc/Purpur-1.20.1/CMI插件文档帮助' },
+          { text: '2. CoreProtect', link: '/Mc/Purpur-1.20.1/CoreProtect' },
         ]
       }
     ],
