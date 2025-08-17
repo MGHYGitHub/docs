@@ -254,7 +254,7 @@ export default defineConfigWithTheme ({
 
     footer: {
       message: `橙子的文档站`,
-      copyright: "Copyright © 2023-2024 🍊",
+      copyright: "Copyright © 2023-2025 🍊",
       // copyright: 'Copyright © 2023 备案号：<a href="https://beian.miit.gov.cn/" target="_blank">京****号</a>',
     },
   }

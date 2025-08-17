@@ -4,8 +4,8 @@ import "./chunk-5WRI5ZAA.js";
 var InjectionKey = Symbol("VPNolebaseInlineLinkPreview");
 
 // node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/index.mjs
-import InlineLinkPreview from "E:/Desktop/Docs/node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/components/InlineLinkPreview.vue";
-import PopupIframe from "E:/Desktop/Docs/node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/components/PopupIframe.vue";
+import InlineLinkPreview from "D:/XT/Docs/node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/components/InlineLinkPreview.vue";
+import PopupIframe from "D:/XT/Docs/node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/components/PopupIframe.vue";
 var components = {
   VPNolebaseInlineLinkPreview: InlineLinkPreview
 };

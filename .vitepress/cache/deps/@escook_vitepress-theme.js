@@ -1,7 +1,7 @@
 import {
   defineComponent,
   h
-} from "./chunk-DYYST4CT.js";
+} from "./chunk-NWZ3ACLM.js";
 import "./chunk-5WRI5ZAA.js";
 
 // node_modules/@escook/vitepress-theme/dist/index.js
@@ -10,11 +10,11 @@ import { useData as y, defineClientComponent as n } from "vitepress";
 var b = defineComponent({
   setup(g, { slots: i }) {
     var s, l, r, u;
-    const o = i, { Layout: c } = m, { site: f } = y(), e = f.value.themeConfig, p = ((s = e.musicBall) == null ? void 0 : s.enable) && (((l = e.musicBall) == null ? void 0 : l.src) || ((u = (r = e.musicBall) == null ? void 0 : r.list) == null ? void 0 : u.length) > 0), h2 = n(() => import("./EscookMusicBall-BkDBnoZh-EQVDOAUX.js"), [
+    const o = i, { Layout: c } = m, { site: f } = y(), e = f.value.themeConfig, p = ((s = e.musicBall) == null ? void 0 : s.enable) && (((l = e.musicBall) == null ? void 0 : l.src) || ((u = (r = e.musicBall) == null ? void 0 : r.list) == null ? void 0 : u.length) > 0), h2 = n(() => import("./EscookMusicBall-BkDBnoZh-WBNG3AYZ.js"), [
       {
         style: { display: e.musicBall && e.musicBall.visible ? "" : "none" }
       }
-    ]), C = n(() => import("./EscookHomeFeatureBefore-D_e5sYrO-HQN5MJGP.js")), B = n(() => import("./EscookConfetti-BU05OPRV-GLOFXXZB.js"));
+    ]), C = n(() => import("./EscookHomeFeatureBefore-D_e5sYrO-S7L63H7W.js")), B = n(() => import("./EscookConfetti-BU05OPRV-IDKFXFS4.js"));
     return () => [
       h(c, null, { ...i, "home-features-before": () => {
         var a;
